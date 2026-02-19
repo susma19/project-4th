@@ -17,7 +17,7 @@ include __DIR__ . '/header.php';
         </div>
       </div>
       <div class="hero-image card-shadow">
-        <img src="https://images.unsplash.com/photo-1611085583191-a3b181a88401?auto=format&fit=crop&w=900&q=80" alt="Golden pendant on warm background" />
+        <img src="https://i.pinimg.com/736x/d4/e6/e0/d4e6e0ccc2ea522658f77b606289f88d.jpg" alt="Pearl Jewels" />
       </div>
     </div>
   </section>

@@ -39,7 +39,7 @@ include __DIR__ . '/header.php';
                   <h3><?= htmlspecialchars($p['name']) ?></h3>
                   <p><?= htmlspecialchars($p['material'] ?? 'Fine jewelry') ?></p>
                   <div class="product-row">
-                    <strong>$<?= number_format((float) $p['price'], 0) ?></strong>
+                    <strong>Rs <?= number_format((float) $p['price'], 0) ?></strong>
                     <button class="add-cart-btn" data-id="db-<?= (int) $p['id'] ?>" data-name="<?= htmlspecialchars($p['name']) ?>" data-price="<?= (float) $p['price'] ?>" type="button">Add to Cart</button>
                   </div>
                 </div>
@@ -52,7 +52,9 @@ include __DIR__ . '/header.php';
       <div class="carousel-dots" id="featuredCarouselDots" aria-hidden="true"></div>
 
       <section class="search-results" id="searchResultsSection">
-        <div class="section-head left-head"><h2>Search Results</h2><p id="searchMeta">Type and search for products.</p></div>
+        <div class="section-head left-head">
+          <h2>Search Results</h2>
+          <p id="searchMeta">Type and search for products.</p></div>
         <div class="products-grid" id="searchResults"></div>
       </section>
     </div>

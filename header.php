@@ -1,5 +1,6 @@
 <?php
-if (session_status() === PHP_SESSION_NONE) session_start();
+if (session_status() === PHP_SESSION_NONE) 
+  session_start();
 $current = basename($_SERVER['PHP_SELF']);
 $loggedIn = isset($_SESSION['user_id']) && isset($_SESSION['user_name']);
 function isActive(string $file, string $current): string {
